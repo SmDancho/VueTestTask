@@ -10,7 +10,7 @@ export default {};
     ></router-link>
     <nav class="nav">
       <ul class="nav__list">
-        <router-link to="/favorite">
+        <router-link to="/favorites">
           <li class="nav__item">
             <img src="../assets/heart.svg" alt="избранное" />
             <p>избранное</p>
