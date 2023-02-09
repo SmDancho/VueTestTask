@@ -6,7 +6,7 @@ export default {
       navItems: [
         {
           id: 0,
-          img: "/src/assets/heart.svg",
+          img: "/assets/heart.svg",
           label: "избранное",
           alt: "избранное",
           route: "/favorites",
