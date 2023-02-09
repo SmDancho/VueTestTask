@@ -6,7 +6,7 @@ export default {
       navItems: [
         {
           id: 0,
-          img: "src/assets/heart.svg",
+          img: "/src/assets/heart.svg",
           label: "избранное",
           alt: "избранное",
           route: "/favorites",
@@ -20,7 +20,7 @@ export default {
 <template>
   <header class="header">
     <router-link to="/">
-      <div class="logo"><img src="../assets/logo.svg" alt="logotype" /></div
+      <div class="logo"><img src="/assets/logo.svg" alt="logotype" /></div
     ></router-link>
     <nav class="nav">
       <ul class="nav__list" v-for="items in navItems" :key="items.id">
