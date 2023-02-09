@@ -1,20 +1,6 @@
 <!-- eslint-disable no-unused-labels -->
 <script>
-export default {
-  data() {
-    return {
-      navItems: [
-        {
-          id: 0,
-          img: "/assets/heart.svg",
-          label: "избранное",
-          alt: "избранное",
-          route: "/favorites",
-        },
-      ],
-    };
-  },
-};
+export default {};
 </script>
 
 <template>
@@ -23,11 +9,11 @@ export default {
       <div class="logo"><img src="../assets/logo.svg" alt="logotype" /></div
     ></router-link>
     <nav class="nav">
-      <ul class="nav__list" v-for="items in navItems" :key="items.id">
-        <router-link :to="items.route">
+      <ul class="nav__list">
+        <router-link to="/favorite">
           <li class="nav__item">
-            <img :src="items.img" :alt="items.alt" />
-            <p>{{ items.label }}</p>
+            <img src="../assets/heart.svg" alt="избранное" />
+            <p>избранное</p>
           </li>
         </router-link>
       </ul>
